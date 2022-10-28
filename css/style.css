@@ -1,0 +1,387 @@
+@import "animate.css";
+body {
+  font-family: Roboto, sans-serif;
+  margin: 2rem;
+  display: block;
+}
+
+.header2 {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0px 1px 17px gray;
+  height: 4rem;
+}
+.header2Logo2 {
+  text-align: center;
+  scale: 0.5;
+  cursor: pointer;
+}
+.header2Back {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.header2Img {
+  max-width: 100%;
+  height: 34rem;
+  object-fit: cover;
+  width: 2560px;
+}
+
+.Menu {
+  max-width: 100%;
+  position: relative;
+  background-color: #f6f6f6;
+  margin: auto;
+  height: 37rem;
+  border-radius: 35px 35px 0 0;
+  margin-top: -4rem;
+  min-width: 1280px;
+  width: 1280px;
+}
+.MenuNote {
+  height: 42rem;
+}
+.Menu_Title {
+  font-family: "Shrikhand", cursive;
+  padding: 2rem;
+}
+.MenuGrid {
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.MenuSubTitle {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 2rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  text-decoration: underline #99e2d0 4px;
+}
+.Menu .MenuCard {
+  max-width: 100%;
+  position: relative;
+  background-color: white;
+  width: 24rem;
+  height: 4.5rem;
+  border-radius: 15px;
+  margin-left: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.Menu .MenuCard:hover .checkContainer {
+  transition: all 500ms;
+  right: 0;
+  opacity: 1;
+}
+.Menu .MenuCard:hover .MenuCardPrice {
+  transition: 400ms;
+  right: 4rem;
+}
+.Menu .MenuCard:hover .checkContainerIcon {
+  transition: 1s;
+  transform: rotate(0deg);
+}
+.Menu .MenuCardInfo {
+  line-height: 1px;
+  padding: 0.175rem;
+  margin-left: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.Menu .MenuCardPrice {
+  line-height: 3rem;
+  height: 4rem;
+  padding: 1rem;
+  width: 2rem;
+  background-color: #fff;
+  position: absolute;
+  right: 0rem;
+  top: 0%;
+}
+.Menu .heart, .Menu .heart2 {
+  font-size: 2rem;
+  right: 2rem;
+  position: absolute;
+  top: 2rem;
+  cursor: pointer;
+}
+.Menu .heart2, .Menu .heart22 {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  box-sizing: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 300ms all ease;
+  transform: scale(1);
+}
+.Menu .heart2:hover, .Menu .heart22:hover {
+  opacity: 1;
+  scale: 1.05;
+}
+.Menu .orderBtn {
+  display: block;
+  text-align: center;
+  margin: 3rem;
+}
+.Menu .orderBtn button {
+  font-size: large;
+  background-color: #9356dc;
+  color: white;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 1.5rem;
+  transition: all 500ms ease;
+}
+.Menu .orderBtn button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 10px grey;
+  filter: brightness(1.1);
+}
+.Menu .checkContainer {
+  overflow: hidden;
+  position: absolute;
+  background-color: #99e2d0;
+  height: 2.5rem;
+  padding: 1rem;
+  right: -1rem;
+  top: 0rem;
+  width: 2rem;
+  border-radius: 0px 15px 15px 0px;
+  justify-items: center;
+  text-align: center;
+  opacity: 0;
+  line-height: 2.5rem;
+}
+.Menu .checkContainerIcon {
+  transform: rotate(180deg);
+  scale: 1.5;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  box-shadow: 0px 1px 17px gray;
+  text-align: center;
+  max-width: 100%;
+  height: 4rem;
+}
+.headerLogo {
+  scale: 0.5;
+}
+
+.location {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  height: 60px;
+  max-width: 100%;
+}
+.locationDot {
+  margin-right: 1rem;
+  margin-top: 20px;
+  scale: 1.2;
+}
+.locationPlace {
+  line-height: 22px;
+}
+
+.explore {
+  background-color: #fafafa;
+  text-align: center;
+  line-height: 2rem;
+  min-width: 1540px;
+}
+.exploreBtn {
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+.explore button {
+  font-size: 100%;
+  color: white;
+  border: none;
+  width: 15em;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  transition: all 500ms ease;
+}
+.explore button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 10px grey;
+  filter: brightness(1.1);
+}
+
+.navBar {
+  width: 100%;
+  padding-bottom: 4rem;
+  width: 1280px;
+  margin: auto;
+  max-width: 100%;
+}
+.navBar_Header {
+  padding: 1rem;
+}
+.navBarSign {
+  display: flex;
+}
+.navBarSignCard {
+  display: flex;
+  flex: 1;
+  margin: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  transition: all 400ms ease;
+  box-shadow: 4px 4px 15px grey;
+}
+.navBarSignCard:hover {
+  scale: 1.02;
+}
+.navBarSignCardIcon {
+  margin-right: 1.5rem;
+  color: grey;
+}
+.navBarSignCard .order {
+  position: relative;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #9356dc;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100px;
+  left: -2.1rem;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  height: 45rem;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 100%;
+}
+.restaurant_Header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+.restaurantGrid {
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.restaurantGridCard {
+  position: relative;
+  box-shadow: 0px 2px 20px grey;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  text-decoration: none;
+  color: inherit;
+  height: 16.4rem;
+  transition: all 400ms ease;
+}
+.restaurantGridCard:hover {
+  scale: 1.03;
+}
+.restaurant .Card_Img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.restaurant .Card_ImgInfo {
+  position: relative;
+  margin-left: 1rem;
+  line-height: 5px;
+}
+.restaurant .Card_ImgHeart, .restaurant .Card_ImgHeart2 {
+  font-size: 2rem;
+  right: 1rem;
+  position: absolute;
+  top: 0%;
+}
+.restaurant .Card_ImgHeart2 {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  opacity: 0;
+  box-sizing: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 300ms all ease;
+  transform: scale(1);
+}
+.restaurant .Card_ImgHeart2:hover {
+  opacity: 1;
+  scale: 1.05;
+}
+.restaurant .Card_ImgNew {
+  z-index: 1;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1rem;
+  min-width: 1989px;
+  max-width: 100%;
+}
+.footerContainer {
+  max-width: 1300px;
+  margin: auto;
+}
+.footerLogo {
+  color: white;
+  font-size: larger;
+  font-family: "Shrikhand", cursive;
+}
+.footerList {
+  line-height: 1.75rem;
+  color: white;
+}
+.footerList :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
